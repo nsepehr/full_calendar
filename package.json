@@ -2,6 +2,20 @@
   "name": "full_calendar",
   "version": "1.0.0",
   "description": "Availibility calendar for Perfect Venue",
+  "keywords": [
+    "Full",
+    "Calendar"
+  ],
+  "author": "Nima Sepehr",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsepehr/full_calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nsepehr/full_calendar/issues"
+  },
+  "homepage": "https://github.com/nsepehr/full_calendar#readme",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
@@ -9,18 +23,21 @@
     "dev": "echo \"Running dev server\" && webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nsepehr/full_calendar.git"
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
-  "keywords": [
-    "Full",
-    "Calendar"
-  ],
-  "author": "Nima Sepehr",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nsepehr/full_calendar/issues"
-  },
-  "homepage": "https://github.com/nsepehr/full_calendar#readme"
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
 }
