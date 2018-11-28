@@ -8,6 +8,18 @@ module.exports = {
     filename: 'bundle.js'
   },
   mode: "development",
+  devServer: {
+    inline: true,
+    port: 3000,
+    contentBase: './dist',
+    proxy: {
+        '*': {
+            target: 'http://localhost:3008',
+            secure: false,
+            changeOrigin: true,
+        }
+    },
+  },
   module: {
     rules: [
       {
