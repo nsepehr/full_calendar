@@ -1,0 +1,23 @@
+{
+  "name": "full_calendar",
+  "version": "1.0.0",
+  "description": "Availibility calendar for Perfect Venue",
+  "main": "dist/server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsepehr/full_calendar.git"
+  },
+  "keywords": [
+    "Full",
+    "Calendar"
+  ],
+  "author": "Nima Sepehr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsepehr/full_calendar/issues"
+  },
+  "homepage": "https://github.com/nsepehr/full_calendar#readme"
+}
