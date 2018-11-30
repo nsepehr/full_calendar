@@ -4,24 +4,25 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import 'moment/min/moment.min.js';
 import 'fullcalendar';
+import { SSL_OP_EPHEMERAL_RSA } from 'constants';
 
 class FullCalendar extends Component {
   constructor(props) {
     super(props);
     this.events = [
       {
-        start: '2017-11-29',
-        end: '2017-11-29',
-        rendering: 'background',
-        color: '#00FF00'
+        title: "First Event",
+        start: '2018-11-29',
+        end: '2018-11-29'
       }
     ]
   }
 
   componentDidMount() {
-    $('#calendar').fullCalendar({
+    this.calendar = $('#calendar').fullCalendar({
       // put your options and callbacks here
-    })
+      events: this.events
+    });
   }
   
   render() {
