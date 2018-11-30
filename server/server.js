@@ -1,11 +1,16 @@
-const http 		= require('http');
+const http 		  = require('http');
 const express 	= require('express');
 const bodyParser = require('body-parser');
-const cors 		= require('cors');
-const router	= require('./routes.js');
+const cors 		  = require('cors');
+const path      = require('path');
+const router	  = require('./routes.js');
 
+// Express server setup
 const app  = express();
 app.server = http.createServer(app);
+
+// My variables
+const dist = path.resolve(__dirname, '../dist/')
 
 // PORT where the server is listening
 const PORT = 3000;
