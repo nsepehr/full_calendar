@@ -65,3 +65,6 @@ typings/
 
 # distribution folder must get generated
 dist/
+
+# db folder for local testing
+db/

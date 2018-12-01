@@ -4,7 +4,9 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import 'moment/min/moment.min.js';
 import 'fullcalendar';
-import { SSL_OP_EPHEMERAL_RSA } from 'constants';
+
+import '../style/calendar.css';
+
 
 class FullCalendar extends Component {
   constructor(props) {
@@ -27,7 +29,7 @@ class FullCalendar extends Component {
   
   render() {
     return (
-      <div id='calendar'></div>
+      <div className="FullCalendar" id='calendar'></div>
     )
   }
 }
