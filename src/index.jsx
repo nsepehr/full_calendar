@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import FullCalendar from './components/FullCalendar';
+import Home from './components/Home';
 
 ReactDOM.render(
-  <FullCalendar />, 
+  <Home />, 
   document.getElementById('perfectVenueApp')
 );
