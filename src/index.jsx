@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 
-import Home from './components/Home';
+import App from './components/App';
 
 ReactDOM.render(
-  <Home />, 
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('perfectVenueApp')
 );
