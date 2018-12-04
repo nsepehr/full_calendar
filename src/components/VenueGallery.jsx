@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { Row, Col, Card } from 'antd';
 const { Meta } = Card;
 
@@ -13,7 +13,7 @@ class VenueGallery extends Component {
   }
 
   cardClicked(id) {
-    console.log(`Card id ${id} clicked`);
+    console.log(`Venue id ${id} clicked`);
     this.setState(() => {
       return {
         redirectTo: true
@@ -23,7 +23,7 @@ class VenueGallery extends Component {
 
   render() {
     if (this.state.redirectTo) {
-      return <Redirect to="/content/1234" />
+      return <Redirect to="/venue/1234" />
     }
     const cols = [];
     for (let i = 0; i < this.state.columnCount; i++) {
@@ -32,7 +32,7 @@ class VenueGallery extends Component {
           <Card
             hoverable
             style={{ width: 240 }}
-            cover={<img alt="Texas_T-Bone" src="content/Texas_T-Bone.jpeg" />}
+            cover={<img alt="Texas_T-Bone" src="venue/Texas_T-Bone.jpeg" />}
             onClick={() => this.cardClicked("5c01e10cde235c15017e8911")}
           >
             <Meta

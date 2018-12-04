@@ -1,0 +1,11 @@
+.pv-venue-title {
+  text-align: center;
+}
+
+.pv-venue-carousel {
+  text-align: center;
+  height: 460px;
+  line-height: 460px;
+  background: #ffffff;
+  overflow: hidden;
+}
